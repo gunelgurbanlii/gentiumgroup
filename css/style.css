@@ -1,0 +1,1137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #header {
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+  }
+  #header .content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  #header .content .left {
+    width: 25%;
+    margin-right: 30px;
+  }
+  #header .content .left a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+  }
+  #header .content .right {
+    width: auto;
+    text-align: center;
+  }
+  #header .content .right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .content .right ul li {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #header .content .right ul li a {
+    font-size: 0.9rem;
+  }
+  #header .content .right ul li .home {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 20px 0;
+    font-weight: 800;
+    position: relative;
+  }
+  #header .content .right ul li .ani {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 20px 0;
+    font-weight: 800;
+    position: relative;
+  }
+  #header .content .right ul li .ani:hover::before {
+    width: 40%;
+    background-color: rgb(233, 32, 79);
+  }
+  #header .content .right ul li .ani::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    transition: 0.3s;
+  }
+  #header .content .right ul li .home {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 20px 0;
+    font-weight: 800;
+    position: relative;
+    transition: 1s;
+  }
+  #header .content .right ul li .home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    height: 2px;
+    background-color: rgb(233, 32, 79);
+    width: 40%;
+    transition: 0.5s;
+  }
+  #header .content .right ul li .zoom {
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    transition: 1s;
+  }
+  
+  #head {
+    width: 100%;
+    background-color: black;
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
+    background-position: 70% 10%;
+    background-repeat: no-repeat;
+    background-size: 640px;
+    height: 138vh;
+  }
+  #head .box-text {
+    width: 80%;
+    margin: auto;
+    padding-top: 160px;
+  }
+  #head .box-text .hh {
+    width: 700px;
+  }
+  #head .box-text .hh h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 5rem;
+  }
+  #head .box-text .button {
+    margin-top: 70px;
+  }
+  #head .box-text .button a {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 20px 35px;
+    border: 2px solid rgb(233, 32, 79);
+    position: relative;
+    z-index: 1;
+  }
+  #head .box-text .button a:hover::before {
+    width: 100%;
+  }
+  #head .box-text .button a::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(233, 32, 79);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  #head .boxes {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 170px;
+    position: relative;
+  }
+  #head .boxes .box {
+    width: 32%;
+    border: 2px solid red;
+    background-color: rgb(233, 32, 79);
+    height: 385px;
+  }
+  #head .boxes .box i {
+    color: white;
+    font-size: 40px;
+    padding: 70px 20px 20px 40px;
+  }
+  #head .boxes .box h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 60px 20px 20px 40px;
+    position: relative;
+  }
+  #head .boxes .box h1::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    bottom: 10%;
+  }
+  #head .boxes .box p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    padding: 0px 20px 20px 40px;
+  }
+  #head .boxes .boxx {
+    width: 32%;
+    background-color: #1B1B1B;
+    height: 385px;
+    transition: 0.5s ease-in-out;
+  }
+  #head .boxes .boxx:hover {
+    background-color: rgb(233, 32, 79);
+  }
+  #head .boxes .boxx:hover i {
+    color: white;
+  }
+  #head .boxes .boxx i {
+    color: rgb(233, 32, 79);
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+    padding: 70px 20px 20px 40px;
+  }
+  #head .boxes .boxx h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 60px 20px 20px 40px;
+    position: relative;
+  }
+  #head .boxes .boxx h1::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    bottom: 10%;
+  }
+  #head .boxes .boxx p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    padding: 0px 20px 20px 40px;
+  }
+  #head .boxes .boxx2 {
+    width: 32%;
+    background-color: #1B1B1B;
+    height: 385px;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+  }
+  #head .boxes .boxx2:hover {
+    background-color: rgb(233, 32, 79);
+  }
+  #head .boxes .boxx2:hover i {
+    color: white;
+  }
+  #head .boxes .boxx2 i {
+    color: rgb(233, 32, 79);
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+    padding: 70px 20px 20px 40px;
+  }
+  #head .boxes .boxx2 h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 60px 20px 20px 40px;
+    position: relative;
+  }
+  #head .boxes .boxx2 h1::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    bottom: 10%;
+  }
+  #head .boxes .boxx2 p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    padding: 0px 20px 20px 40px;
+  }
+  
+  #works {
+    width: 100%;
+    margin: auto;
+    background-color: #101010;
+    padding-top: 100px;
+  }
+  #works .box-text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  #works .box-text .left {
+    width: 30%;
+  }
+  #works .box-text .left h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  #works .box-text .left h1::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 1.5px;
+    background-color: rgb(233, 32, 79);
+    left: 0;
+    top: -40%;
+  }
+  #works .box-text .left p {
+    font-family: "Barlow", sans-serif;
+    color: rgb(233, 32, 79);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+  }
+  #works .box-text .button {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #works .box-text .button a {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 20px 35px;
+    border: 2px solid rgb(233, 32, 79);
+    position: relative;
+    z-index: 1;
+  }
+  #works .box-text .button a:hover::before {
+    width: 100%;
+  }
+  #works .box-text .button a::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(233, 32, 79);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  #works .boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  #works .boxes .box {
+    width: 31%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  #works .boxes .box:hover .shoe {
+    transform: scale(1.2);
+  }
+  #works .boxes .box:hover .overlay {
+    opacity: 1;
+  }
+  #works .boxes .box .shoe {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+  }
+  #works .boxes .box .bg1 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min-1-1024x683.jpg);
+    background-position: 50%;
+  }
+  #works .boxes .box .bg2 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/04-min-1-1024x683.jpg);
+    background-position: 50%;
+  }
+  #works .boxes .box .bg3 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/07-min-1024x683.jpg);
+    background-position: 50%;
+  }
+  #works .boxes .box .overlay {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  #works .boxes .box .overlay .txt h1 {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  #works .boxes .box .overlay .txt p {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  #clients {
+    width: 100%;
+    background-color: #101010;
+    padding-bottom: 100px;
+  }
+  #clients .boxes {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  #clients .boxes .left {
+    width: 35%;
+    height: 600px;
+    position: relative;
+  }
+  #clients .boxes .left img {
+    width: 100%;
+  }
+  #clients .boxes .left::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(233, 32, 79);
+    width: 24px;
+    height: 100px;
+    right: -5.2%;
+    bottom: 1%;
+  }
+  #clients .boxes .left::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(233, 32, 79);
+    width: 100px;
+    height: 24px;
+    right: -5.2%;
+    bottom: -3%;
+  }
+  #clients .boxes .right {
+    width: 45%;
+    margin-right: 70px;
+    text-align: left;
+    padding-top: 80px;
+  }
+  #clients .boxes .right .box-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  #clients .boxes .right .box-text h1::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 1.5px;
+    background-color: rgb(233, 32, 79);
+    left: 0;
+    top: -40%;
+  }
+  #clients .boxes .right .box-text p {
+    font-family: "Barlow", sans-serif;
+    color: rgb(233, 32, 79);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+  }
+  #clients .boxes .right .text p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-family: "Barlow", sans-serif;
+    color: #ACACAC;
+    padding-top: 70px;
+  }
+  #clients .boxes .right .text h1 {
+    font-family: "Barlow", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    padding-top: 70px;
+    position: relative;
+  }
+  #clients .boxes .right .text h1::before {
+    content: "";
+    position: absolute;
+    background-color: #ACACAC;
+    height: 2px;
+    width: 35px;
+    bottom: 40%;
+  }
+  
+  #comp {
+    width: 100%;
+    background-color: #101010;
+    height: 40vh;
+  }
+  #comp .all {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-top: 1px solid rgba(100, 100, 100, 0.349);
+    padding-top: 40px;
+  }
+  #comp .all .box {
+    width: 15%;
+    text-align: center;
+  }
+  
+  #news {
+    width: 100%;
+    background-color: #101010;
+  }
+  #news .box-text {
+    text-align: center;
+    padding: 50px 0;
+  }
+  #news .box-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  #news .box-text h1::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(233, 32, 79);
+    width: 2px;
+    height: 60px;
+    left: 50%;
+    bottom: 150%;
+    transform: translate(-50%, -50%);
+  }
+  #news .box-text p {
+    font-family: "Barlow", sans-serif;
+    color: rgb(233, 32, 79);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+  }
+  #news .boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+  }
+  #news .boxes .box {
+    width: 31%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+  }
+  #news .boxes .box:hover .person {
+    transform: scale(1.2);
+  }
+  #news .boxes .box:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.52);
+  }
+  #news .boxes .box:hover .overlay .txt {
+    padding-bottom: 20px;
+  }
+  #news .boxes .box:hover .bg1 {
+    filter: none;
+  }
+  #news .boxes .box:hover .bg2 {
+    filter: none;
+  }
+  #news .boxes .box:hover .bg3 {
+    filter: none;
+  }
+  #news .boxes .box .person {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+  }
+  #news .boxes .box .bg1 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/01-min.jpg);
+    background-position: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  #news .boxes .box .bg2 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min.jpg);
+    background-position: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  #news .boxes .box .bg3 {
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/05-min.jpg);
+    background-position: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  #news .boxes .box .overlay {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #news .boxes .box .overlay .txt {
+    padding-bottom: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  #news .boxes .box .overlay .txt h1 {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  #news .boxes .box .overlay .txt p {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  #services {
+    width: 100%;
+    background-color: #101010;
+  }
+  #services .content {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: left;
+  }
+  #services .box-text {
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  #services .box-text .line {
+    background-color: rgb(233, 32, 79);
+    width: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 2%;
+    bottom: 120%;
+    height: 1.5px;
+  }
+  #services .box-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  #services .box-text p {
+    font-family: "Barlow", sans-serif;
+    color: rgb(233, 32, 79);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+  }
+  #services .boxes {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #services .boxes .box {
+    width: 32%;
+    margin: auto;
+    background-color: #191919;
+    display: flex;
+    position: relative;
+    padding: 45px 0;
+    transition: 2s;
+    margin: 10px 0;
+  }
+  #services .boxes .box .icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 5%;
+    top: 50%;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s ease-in;
+  }
+  #services .boxes .box p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    top: 50%;
+    z-index: 1;
+    transition: 0.3s ease-in;
+  }
+  #services .boxes .box .arrow {
+    color: grey;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 5%;
+    top: 50%;
+    z-index: 1;
+    transition: 0.3s ease-in;
+  }
+  #services .boxes .box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 32, 79);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transition: 0.3s ease-in;
+  }
+  #services .boxes .box:hover::before {
+    opacity: 1;
+  }
+  #services .boxes .box:hover .icon {
+    opacity: 1;
+    font-size: 40px;
+    left: 10%;
+  }
+  #services .boxes .box:hover p {
+    left: 50%;
+  }
+  #services .boxes .box:hover .arrow {
+    right: 3%;
+    color: white;
+  }
+  
+  #about {
+    width: 100%;
+    height: 170vh;
+    background-color: #101010;
+  }
+  #about .content {
+    width: 80%;
+    margin: auto;
+  }
+  #about .content .top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  #about .content .top .left {
+    width: 30%;
+  }
+  #about .content .top .left h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    position: relative;
+  }
+  #about .content .top .left h1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1.5px;
+    left: 0;
+    background-color: rgb(233, 32, 79);
+    top: -40px;
+  }
+  #about .content .top .left p {
+    font-family: "Barlow", sans-serif;
+    color: rgb(233, 32, 79);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+  }
+  #about .content .top .right {
+    width: 60%;
+  }
+  #about .content .top .right p {
+    color: #ACACAC;
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-family: "Barlow", sans-serif;
+  }
+  #about .content .middle {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #about .content .middle .left {
+    width: 65%;
+    height: auto;
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+  }
+  #about .content .middle .left:hover .overlay {
+    background-color: rgba(16, 16, 16, 0.1647058824);
+  }
+  #about .content .middle .left .overlay {
+    background-color: rgba(16, 16, 16, 0.5137254902);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 68% 0 0 5%;
+    transition: 0.3s ease-in-out;
+  }
+  #about .content .middle .left .overlay h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+  }
+  #about .content .middle .left .overlay p {
+    color: #E4E5E7;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  #about .content .middle .right {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about .content .middle .right .img1 {
+    width: 100%;
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+  }
+  #about .content .middle .right .img1:hover .overlay {
+    background-color: rgba(16, 16, 16, 0.1647058824);
+  }
+  #about .content .middle .right .img1 .overlay {
+    background-color: rgba(16, 16, 16, 0.5137254902);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 56% 0 0 5%;
+    transition: 0.3s ease-in-out;
+  }
+  #about .content .middle .right .img1 .overlay h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+  }
+  #about .content .middle .right .img1 .overlay p {
+    color: #E4E5E7;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  #about .content .middle .right .img2 {
+    width: 100%;
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+  }
+  #about .content .middle .right .img2:hover .overlay1 {
+    background-color: rgba(16, 16, 16, 0.1647058824);
+  }
+  #about .content .middle .right .img2 .overlay1 {
+    background-color: rgba(16, 16, 16, 0.5137254902);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 56% 0 0 5%;
+    transition: 0.3s ease-in-out;
+  }
+  #about .content .middle .right .img2 .overlay1 h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+  }
+  #about .content .middle .right .img2 .overlay1 p {
+    color: #E4E5E7;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  #about .content .bottom {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #about .content .bottom::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 60px;
+    background-color: rgb(233, 32, 79);
+    left: 50.66%;
+    transform: translate(-50%, -50%);
+    bottom: -120%;
+  }
+  #about .content .bottom .box {
+    width: 30%;
+  }
+  #about .content .bottom .box h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+  }
+  #about .content .bottom .box p {
+    color: #dbdbdb;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 20px 0;
+  }
+  
+  #footer {
+    width: 100%;
+  }
+  #footer .top {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1B1B;
+  }
+  #footer .top .boxes {
+    padding: 50px 0;
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  #footer .top .boxes .box {
+    width: 33%;
+    padding: 50px;
+    text-align: center;
+  }
+  #footer .top .boxes .box .button {
+    margin-top: 15px;
+  }
+  #footer .top .boxes .box .button a {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 20px 35px;
+    border: 2px solid rgb(233, 32, 79);
+    position: relative;
+    z-index: 1;
+  }
+  #footer .top .boxes .box .button a:hover::before {
+    width: 100%;
+  }
+  #footer .top .boxes .box .button a::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(233, 32, 79);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  #footer .top .boxes ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0 20px;
+    margin: auto;
+    list-style: none;
+  }
+  #footer .top .boxes ul li {
+    width: 16%;
+    border: 2px solid rgb(233, 32, 79);
+    padding: 17px 2px;
+    border-radius: 90px;
+    text-align: center;
+  }
+  #footer .top .boxes ul li:hover i {
+    color: rgb(233, 32, 79);
+  }
+  #footer .top .boxes ul li i {
+    transition: 0.3s ease-in;
+    width: 90%;
+    margin: auto;
+    padding: 3px;
+    color: white;
+    font-size: 20px;
+  }
+  #footer .top .boxes h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3rem;
+    position: relative;
+  }
+  #footer .top .boxes h1::before {
+    content: "";
+    width: 1.5px;
+    height: 60px;
+    background-color: rgb(233, 32, 79);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 170%;
+  }
+  #footer .middle {
+    width: 100%;
+    pad: 10px 0;
+    background-color: #161616;
+  }
+  #footer .middle .boxes {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 10px 0;
+  }
+  #footer .middle .boxes .box {
+    padding: 20px 0;
+    width: 50%;
+    text-align: center;
+  }
+  #footer .middle .boxes .box p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    padding: 5px 0;
+    transition: 0.2s ease-in-out;
+  }
+  #footer .middle .boxes .box h1 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+  }
+  #footer .middle .boxes .box:hover p {
+    color: rgb(233, 32, 79);
+  }
+  #footer .middle .boxes .box:hover h1 {
+    color: rgb(233, 32, 79);
+  }
+  #footer .bottom {
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    padding: 30px 0;
+  }
+  #footer .bottom .left {
+    width: 50%;
+    margin-left: 140px;
+  }
+  #footer .bottom .left p {
+    color: #707070;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+  }
+  #footer .bottom .left p a {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  #footer .bottom .right {
+    width: 30%;
+    margin: 0 100px;
+  }
+  #footer .bottom .right ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #footer .bottom .right ul li {
+    width: 30%;
+    text-align: center;
+  }
+  #footer .bottom .right ul li a {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 20px 0;
+    position: relative;
+  }
+  #footer .bottom .right ul li a:hover::before {
+    width: 45px;
+    background-color: rgb(233, 32, 79);
+  }
+  #footer .bottom .right ul li a::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1.5px;
+    left: 0;
+    width: 0;
+    bottom: 15%;
+    transition: 0.3s ease-in-out;
+  }/*# sourceMappingURL=test.css.map */

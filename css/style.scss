@@ -1,0 +1,1431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+// HEADER START
+#header {
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+
+    .content {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+
+        .left {
+            width: 25%;
+            margin-right: 30px;
+
+            a {
+                text-decoration: none;
+                font-family: 'Raleway', sans-serif;
+                font-size: 2rem;
+                font-weight: 900;
+                color: white;
+            }
+        }
+
+        .right {
+            width: auto;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    margin: 0 10px;
+                    text-align: center;
+
+                    a {
+                        font-size: 0.9rem;
+                    }
+
+                    .home {
+                        text-decoration: none;
+                        font-family: 'Raleway', sans-serif;
+                        color: white;
+                        padding: 20px 0;
+                        font-weight: 800;
+                        position: relative;
+                    }
+
+                    .ani {
+                        text-decoration: none;
+                        font-family: 'Raleway', sans-serif;
+                        color: white;
+                        padding: 20px 0;
+                        font-weight: 800;
+                        position: relative;
+
+                        &:hover {
+                            &::before {
+                                width: 40%;
+                                background-color: rgb(233, 32, 79);
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 15%;
+                            height: 2px;
+                            background-color: white;
+                            width: 0;
+                            transition: 0.3s;
+                        }
+
+                    }
+
+                    .home {
+                        text-decoration: none;
+                        font-family: 'Raleway', sans-serif;
+                        color: white;
+                        padding: 20px 0;
+                        font-weight: 800;
+                        position: relative;
+                        transition: 1s;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 15%;
+                            height: 2px;
+                            background-color: rgb(233, 32, 79);
+                            width: 40%;
+                            transition: 0.5s;
+                        }
+
+
+                    }
+
+                    .zoom {
+                        text-decoration: none;
+                        color: white;
+                        padding: 20px 0;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// HEADER FINISHED
+// -----------
+// HEAD START
+#head {
+    width: 100%;
+    background-color: black;
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
+    background-position: 70% 10%;
+    background-repeat: no-repeat;
+    background-size: 640px;
+    height: 138vh;
+
+    // .bg {}
+
+    .box-text {
+        width: 80%;
+        margin: auto;
+        padding-top: 160px;
+
+        .hh {
+
+            width: 700px;
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-weight: 900;
+                font-size: 5rem;
+            }
+        }
+
+        .button {
+            margin-top: 70px;
+
+            a {
+                font-family: "Barlow", sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+                padding: 20px 35px;
+                border: 2px solid rgb(233, 32, 79);
+                position: relative;
+                z-index: 1;
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: rgb(233, 32, 79);
+                    z-index: -1;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .boxes {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 170px;
+        position: relative;
+
+
+
+        .box {
+            width: 32%;
+            border: 2px solid red;
+            background-color: rgb(233, 32, 79);
+            height: 385px;
+
+            i {
+                color: white;
+                font-size: 40px;
+                padding: 70px 20px 20px 40px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 800;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                padding: 60px 20px 20px 40px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: white;
+                    bottom: 10%;
+
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 100;
+                font-family: "Barlow", sans-serif;
+                color: white;
+                padding: 0px 20px 20px 40px;
+            }
+
+        }
+
+        .boxx {
+            width: 32%;
+            background-color: #1B1B1B;
+            height: 385px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                background-color: rgb(233, 32, 79);
+
+                i {
+                    color: white;
+                }
+            }
+
+            i {
+                color: rgb(233, 32, 79);
+                font-size: 40px;
+                transition: 0.5s ease-in-out;
+                padding: 70px 20px 20px 40px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 800;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                padding: 60px 20px 20px 40px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: white;
+                    bottom: 10%;
+
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 100;
+                font-family: "Barlow", sans-serif;
+                color: white;
+                padding: 0px 20px 20px 40px;
+            }
+
+
+        }
+
+        .boxx2 {
+            width: 32%;
+            background-color: #1B1B1B;
+            height: 385px;
+            transition: 0.5s ease-in-out;
+            z-index: 1;
+
+
+            &:hover {
+                background-color: rgb(233, 32, 79);
+
+                i {
+                    color: white;
+                }
+            }
+
+            i {
+                color: rgb(233, 32, 79);
+                font-size: 40px;
+                transition: 0.5s ease-in-out;
+                padding: 70px 20px 20px 40px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 800;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                padding: 60px 20px 20px 40px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: white;
+                    bottom: 10%;
+
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 100;
+                font-family: "Barlow", sans-serif;
+                color: white;
+                padding: 0px 20px 20px 40px;
+            }
+
+        }
+    }
+}
+
+// HEAD FINISHED
+// ------------------
+// WORKS START
+#works {
+    width: 100%;
+    margin: auto;
+    background-color: #101010;
+    padding-top: 100px;
+
+    .box-text {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+
+        .left {
+            width: 30%;
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-weight: 800;
+                font-size: 3.5rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 45px;
+                    height: 1.5px;
+                    background-color: rgb(233, 32, 79);
+                    left: 0;
+                    top: -40%;
+                }
+            }
+
+            p {
+                font-family: 'Barlow', sans-serif;
+                color: rgb(233, 32, 79);
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 10px 0 20px 0;
+
+
+            }
+
+
+        }
+
+        .button {
+            width: 30%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                font-family: 'Barlow', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+                padding: 20px 35px;
+                border: 2px solid rgb(233, 32, 79);
+                position: relative;
+                z-index: 1;
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    // top: 50%;
+                    // transform: translate(-50%, -50%);
+                    position: absolute;
+                    background-color: rgb(233, 32, 79);
+                    width: 0;
+                    height: 100%;
+                    z-index: -1;
+                    transition: 0.3s;
+                }
+
+            }
+        }
+    }
+
+    .boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        .box {
+            width: 31%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            // display: inline-block;
+
+            &:hover {
+                .shoe {
+                    transform: scale(1.2);
+                }
+
+                .overlay {
+                    opacity: 1;
+                }
+            }
+
+            .shoe {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                transition: 0.5s ease-in-out;
+            }
+
+            .bg1 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min-1-1024x683.jpg);
+                background-position: 50%;
+            }
+
+            .bg2 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/04-min-1-1024x683.jpg);
+                background-position: 50%;
+            }
+
+            .bg3 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/07-min-1024x683.jpg);
+                background-position: 50%;
+            }
+
+            .overlay {
+                position: absolute;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.52);
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+
+                .txt {
+                    h1 {
+                        color: white;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 2rem;
+                        font-weight: 800;
+                    }
+
+                    p {
+                        color: white;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// WORKS FINISHED
+// -------------------
+// CLIENTS START
+#clients {
+    width: 100%;
+    background-color: #101010;
+    padding-bottom: 100px;
+
+    .boxes {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        .left {
+            width: 35%;
+            height: 600px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: rgb(233, 32, 79);
+                width: 24px;
+                height: 100px;
+                // z-index: -1;
+                right: -5.2%;
+                bottom: 1%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: rgb(233, 32, 79);
+                width: 100px;
+                height: 24px;
+                // z-index: -1;
+                right: -5.2%;
+                bottom: -3%;
+            }
+        }
+
+        .right {
+            width: 45%;
+            margin-right: 70px;
+            text-align: left;
+            padding-top: 80px;
+
+            .box-text {
+                h1 {
+                    font-family: 'Raleway', sans-serif;
+                    color: white;
+                    font-weight: 800;
+                    font-size: 3.5rem;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 45px;
+                        height: 1.5px;
+                        background-color: rgb(233, 32, 79);
+                        left: 0;
+                        top: -40%;
+                    }
+                }
+
+                p {
+                    font-family: 'Barlow', sans-serif;
+                    color: rgb(233, 32, 79);
+                    font-size: 1rem;
+                    font-weight: 700;
+                    padding: 10px 0 20px 0;
+                }
+            }
+
+            .text {
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 100;
+                    font-family: "Barlow", sans-serif;
+                    color: #ACACAC;
+                    padding-top: 70px;
+                }
+
+                h1 {
+                    font-family: "Barlow", sans-serif;
+                    color: white;
+                    font-weight: 800;
+                    font-size: 1rem;
+                    padding-top: 70px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: #ACACAC;
+                        height: 2px;
+                        width: 35px;
+                        bottom: 40%;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+#comp {
+    width: 100%;
+    background-color: #101010;
+    height: 40vh;
+
+    .all {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        border-top: 1px solid rgba(100, 100, 100, 0.349);
+        padding-top: 40px;
+
+        .box {
+            width: 15%;
+            text-align: center;
+        }
+    }
+}
+
+// CLIENTS FINISHED
+// ---------------------
+// NEWS START
+#news {
+    width: 100%;
+    background-color: #101010;
+
+    .box-text {
+        text-align: center;
+        padding: 50px 0;
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            font-weight: 800;
+            font-size: 3.5rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: rgb(233, 32, 79);
+                width: 2px;
+                height: 60px;
+                left: 50%;
+                bottom: 150%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        p {
+            font-family: 'Barlow', sans-serif;
+            color: rgb(233, 32, 79);
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 10px 0 20px 0;
+        }
+    }
+
+    .boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+
+        .box {
+            width: 31%;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+                .person {
+                    transform: scale(1.2);
+                }
+
+                .overlay {
+                    background-color: rgba(0, 0, 0, 0.52);
+
+
+                    .txt {
+                        padding-bottom: 20px;
+                    }
+                }
+
+                .bg1 {
+                    filter: none;
+                }
+
+                .bg2 {
+                    filter: none;
+                }
+
+                .bg3 {
+                    filter: none;
+                }
+
+            }
+
+            .person {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                transition: 0.5s ease-in-out;
+            }
+
+            .bg1 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/01-min.jpg);
+                background-position: 50%;
+                filter: grayscale(100%);
+                transition: 0.5s ease-in-out;
+                vertical-align: middle;
+
+            }
+
+            .bg2 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min.jpg);
+                background-position: 50%;
+                filter: grayscale(100%);
+                transition: 0.5s ease-in-out;
+                vertical-align: middle;
+
+            }
+
+            .bg3 {
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/05-min.jpg);
+                background-position: 50%;
+                filter: grayscale(100%);
+                transition: 0.5s ease-in-out;
+                vertical-align: middle;
+
+            }
+
+            .overlay {
+                position: absolute;
+                text-align: center;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                transition: 0.5s ease-in-out;
+                background-color: rgba(0, 0, 0, 0);
+
+
+                .txt {
+                    padding-bottom: 10px;
+                    transition: 0.5s ease-in-out;
+
+                    h1 {
+                        color: white;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                    }
+
+                    p {
+                        color: white;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// SERVICES START
+#services {
+    width: 100%;
+    background-color: #101010;
+
+    .content {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+        text-align: left;
+    }
+
+    .box-text {
+        width: 90%;
+        position: relative;
+        margin: auto;
+
+        .line {
+            background-color: rgb(233, 32, 79);
+            width: 50px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 2%;
+            bottom: 120%;
+            height: 1.5px;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            font-weight: 800;
+            font-size: 3.5rem;
+            position: relative;
+        }
+
+        p {
+            font-family: 'Barlow', sans-serif;
+            color: rgb(233, 32, 79);
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 10px 0 20px 0;
+
+
+        }
+
+    }
+
+    .boxes {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // transition: 1s;
+
+        .box {
+            width: 32%;
+            margin: auto;
+            background-color: #191919;
+            display: flex;
+            position: relative;
+            padding: 45px 0;
+            transition: 2s;
+            margin: 10px 0;
+
+            .icon {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 5%;
+                top: 50%;
+                color: white;
+                font-size: 20px;
+                z-index: 1;
+                opacity: 0;
+                transition: 0.3s ease-in;
+            }
+
+            p {
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-size: 1.3rem;
+                font-weight: 700;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 30%;
+                top: 50%;
+                z-index: 1;
+                transition: 0.3s ease-in;
+            }
+
+            .arrow {
+                color: grey;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                right: 5%;
+                top: 50%;
+                z-index: 1;
+                transition: 0.3s ease-in;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgb(233, 32, 79);
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                opacity: 0;
+                transition: 0.3s ease-in;
+                // z-index: -1;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+
+                .icon {
+                    opacity: 1;
+                    font-size: 40px;
+                    left: 10%;
+                }
+
+                p {
+                    left: 50%;
+                }
+
+                .arrow {
+                    right: 3%;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+// SERVICES FINISHED
+// ------------------------
+// ABOUT START
+#about {
+    width: 100%;
+    height: 170vh;
+    background-color: #101010;
+
+    .content {
+        width: 80%;
+        margin: auto;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 70px;
+
+            .left {
+                width: 30%;
+
+
+                h1 {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 3.5rem;
+                    font-weight: 800;
+                    color: white;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 50px;
+                        height: 1.5px;
+                        left: 0;
+                        background-color: rgb(233, 32, 79);
+                        top: -40px;
+                    }
+                }
+
+                p {
+                    font-family: 'Barlow', sans-serif;
+                    color: rgb(233, 32, 79);
+                    font-size: 1rem;
+                    font-weight: 700;
+                    padding: 10px 0 20px 0;
+                }
+            }
+
+            .right {
+                width: 60%;
+                // margin-left: 100px;
+
+                p {
+                    color: #ACACAC;
+                    font-size: 1.1rem;
+                    font-weight: 200;
+                    font-family: 'Barlow', sans-serif;
+                }
+            }
+        }
+
+        .middle {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                width: 65%;
+                height: auto;
+                background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                position: relative;
+
+                &:hover {
+                    .overlay {
+                        background-color: #1010102a;
+                    }
+                }
+
+                .overlay {
+                    background-color: #10101083;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding: 68% 0 0 5%;
+                    transition: 0.3s ease-in-out;
+
+                    h1 {
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 1.4rem;
+                        font-weight: 900;
+                        color: white;
+                    }
+
+                    p {
+                        color: #E4E5E7;
+                        font-family: 'Barlow', sans-serif;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+
+            .right {
+                width: 32%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+                .img1 {
+                    width: 100%;
+                    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 280px;
+                    position: relative;
+
+                    // margin-bottom: 20px;
+                    &:hover {
+                        .overlay {
+                            background-color: #1010102a;
+                        }
+                    }
+
+                    .overlay {
+                        background-color: #10101083;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        padding: 56% 0 0 5%;
+                        transition: 0.3s ease-in-out;
+
+                        h1 {
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 1.4rem;
+                            font-weight: 900;
+                            color: white;
+                        }
+
+                        p {
+                            color: #E4E5E7;
+                            font-family: 'Barlow', sans-serif;
+                            font-weight: 300;
+                            font-size: 1.2rem;
+                        }
+
+                    }
+                }
+
+                .img2 {
+                    width: 100%;
+                    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 280px;
+                    position: relative;
+
+                    &:hover {
+                        .overlay1 {
+                            background-color: #1010102a;
+                        }
+                    }
+
+                    .overlay1 {
+                        background-color: #10101083;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        padding: 56% 0 0 5%;
+                        transition: 0.3s ease-in-out;
+
+                        h1 {
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 1.4rem;
+                            font-weight: 900;
+                            color: white;
+                        }
+
+                        p {
+                            color: #E4E5E7;
+                            font-family: 'Barlow', sans-serif;
+                            font-weight: 300;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .bottom {
+            width: 100%;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1.5px;
+                height: 60px;
+                background-color: rgb(233, 32, 79);
+                left: 50.66%;
+                transform: translate(-50%, -50%);
+                bottom: -120%;
+            }
+
+            .box {
+                width: 30%;
+
+                h1 {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    color: white;
+
+                }
+
+                p {
+                    color: #dbdbdb;
+                    font-family: 'Barlow', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.1rem;
+                    padding: 20px 0;
+                }
+
+            }
+        }
+    }
+}
+
+// FOOTER START
+#footer {
+    width: 100%;
+
+
+    .top {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1B1B1B;
+
+        .boxes {
+            padding: 50px 0;
+            display: flex;
+            width: 100%;
+            text-align: center;
+
+            .box {
+                width: 33%;
+                padding: 50px;
+                text-align: center;
+
+                .button {
+                    margin-top: 15px;
+
+                    a {
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: white;
+                        text-decoration: none;
+                        padding: 20px 35px;
+                        border: 2px solid rgb(233, 32, 79);
+                        position: relative;
+                        z-index: 1;
+
+                        &:hover {
+                            &::before {
+                                width: 100%;
+
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            left: 0;
+                            bottom: 0;
+                            // top: 50%;
+                            // transform: translate(-50%, -50%);
+                            position: absolute;
+                            background-color: rgb(233, 32, 79);
+                            width: 0;
+                            height: 100%;
+                            z-index: -1;
+                            transition: 0.3s;
+                        }
+
+                    }
+
+                }
+            }
+
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                width: 60%;
+                padding: 0 20px;
+                margin: auto;
+                list-style: none;
+
+                li {
+                    width: 16%;
+                    border: 2px solid rgb(233, 32, 79);
+                    padding: 17px 2px;
+                    border-radius: 90px;
+                    text-align: center;
+
+                    &:hover {
+                        i {
+                            color: rgb(233, 32, 79);
+                        }
+                    }
+
+                    i {
+                        transition: 0.3s ease-in;
+                        width: 90%;
+                        margin: auto;
+                        padding: 3px;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+
+
+            }
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-weight: 800;
+                font-size: 3rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 1.5px;
+                    height: 60px;
+                    background-color: rgb(233, 32, 79);
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    bottom: 170%;
+
+                }
+            }
+
+
+        }
+    }
+
+    .middle {
+        width: 100%;
+        pad: 10px 0;
+        background-color: #161616;
+
+        .boxes {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            padding: 10px 0;
+
+            .box {
+                padding: 20px 0;
+                width: 50%;
+                text-align: center;
+
+                p {
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 1.4rem;
+                    color: white;
+                    padding: 5px 0;
+                    transition: 0.2s ease-in-out;
+                }
+
+                h1 {
+                    color: white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                    transition: 0.2s ease-in-out;
+                }
+
+                &:hover {
+                    p {
+                        color: rgb(233, 32, 79);
+                    }
+
+                    h1 {
+                        color: rgb(233, 32, 79);
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        display: flex;
+        padding: 30px 0;
+
+        .left {
+            width: 50%;
+            margin-left: 140px;
+
+            p {
+                color: #707070;
+                font-family: 'Barlow', sans-serif;
+                font-size: 0.8rem;
+
+                a {
+                    color: white;
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .right {
+            width: 30%;
+            margin: 0 100px;
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                li {
+                    width: 30%;
+                    text-align: center;
+
+
+                    a {
+                        color: white;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        padding: 20px 0;
+                        position: relative;
+
+                        &:hover {
+                            &::before {
+                                width: 45px;
+                                background-color: rgb(233, 32, 79);
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-color: white;
+                            height: 1.5px;
+                            left: 0;
+                            width: 0;
+                            bottom: 15%;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER FINISHED
